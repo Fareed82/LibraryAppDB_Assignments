@@ -16,8 +16,8 @@ public class BorrowedBooksDefs {
     String actualBooksBorrowed;
 
     @Given("the {string} on the home page")
-    public void the_on_the_home_page(String librarian) {
-        loginPage.login(librarian);
+    public void the_on_the_home_page(String userType) {
+        loginPage.login(userType);
     }
     @When("the librarian gets borrowed books number")
     public void the_librarian_gets_borrowed_books_number() {
