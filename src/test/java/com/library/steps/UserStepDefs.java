@@ -7,10 +7,14 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 import java.sql.SQLOutput;
+import java.util.List;
 
 public class UserStepDefs {
 
     String actualUserCount;
+    List<String> actualColumnNamesAsList;
+
+    //US01 - 1
     @Given("Establish the database connection")
     public void establish_the_database_connection() {
         // Make a conn with library
@@ -44,4 +48,21 @@ public class UserStepDefs {
         System.out.println("--- CONNECTION WILL BE CLOSED WITH AFTER HOOK -----");
         System.out.println("--------------------------------------------------");
     }
+
+    //US01 - 2
+    @When("Execute query to get all columns")
+    public void execute_query_to_get_all_columns() {
+        String query = "select * from users";
+        DB_Util.runQuery(query);
+
+        actualColumnNamesAsList = DB_Util.getAllColumnNamesAsList();
+        System.out.println("columnNamesAsList = " + actualColumnNamesAsList);
+
+    }
+    @Then("verify the below columns are listed in result")
+    public void verify_the_below_columns_are_listed_in_result(List<String> expectedColumnList) {
+        Assert.assertEquals(expectedColumnList, actualColumnNamesAsList);
+    }
+
+
 }
