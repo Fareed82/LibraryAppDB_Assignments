@@ -9,7 +9,7 @@ import org.junit.Assert;
 
 import java.util.List;
 
-public class BookCategoryDefs {
+public class US03_BookCategoryDefs {
 
     BookPage bookPage = new BookPage();
 

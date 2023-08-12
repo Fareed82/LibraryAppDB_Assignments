@@ -6,10 +6,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
-import java.sql.SQLOutput;
 import java.util.List;
 
-public class UserStepDefs {
+public class US01_UserStepDefs {
 
     String actualUserCount;
     List<String> actualColumnNamesAsList;

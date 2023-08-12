@@ -1,16 +1,14 @@
 package com.library.steps;
 
 import com.library.pages.BookPage;
-import com.library.utility.BrowserUtil;
 import com.library.utility.DB_Util;
-import com.library.utility.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 import java.util.Map;
 
-public class BookInfoDefs {
+public class US04_BookInfoDefs {
 
     BookPage bookPage = new BookPage();
 
