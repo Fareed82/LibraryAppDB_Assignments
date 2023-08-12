@@ -39,4 +39,7 @@ where id = (select book_category_id from books
 
 
 
+# US06
+select * from books
+where author = 'J. R. R. Tolkien';
 

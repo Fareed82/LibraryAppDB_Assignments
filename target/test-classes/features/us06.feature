@@ -1,4 +1,4 @@
-
+@us06 @db @ui @wip
 Feature: Books module
   As a librarian, I should be able to add new book into library
 
@@ -14,7 +14,12 @@ Feature: Books module
     And the librarian click to save changes
     Then verify "The book has been created" message is displayed
     And verify "<Book Name>" information must match with DB
+
     Examples:
-      | Book Name             | ISBN     | Year | Author          | Book Category        |
-      | Head First Java       | 10112021 | 2021 | Kathy Sierra    | Action and Adventure |
-      | The Scrum Field Guide | 11112021 | 2006 | Mitch Lacey     | Short Story          |
+      | Book Name                                   | ISBN     | Year    | Author           | Book Category |
+      | In The Land Of Mordor Where The Shadows Lie | 12345678 | 1st Age | J. R. R. Tolkien | Fantasy       |
+      | One Ring To Rule Them All                   | 12345677 | 2nd Age | J. R. R. Tolkien | Fantasy       |
+#      | One Ring To Find Them                       | 12345676 | 2nd Age | J. R. R. Tolkien | Action and Adventure |
+#      | One Ring To Bring Them All                  | 12345675 | 3rd Age | J. R. R. Tolkien | Fantasy              |
+#      | And In The Darkness Bind Them               | 12345674 | 3rd Age | J. R. R. Tolkien | Fantasy              |
+#      | In The Land Of Mordor Where The Shadows Lie | 12345673 | 3rd Age | J. R. R. Tolkien | Fantasy              |

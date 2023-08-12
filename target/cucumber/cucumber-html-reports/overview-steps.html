@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>12 Aug 2023, 11:22</td>
+      <td>12 Aug 2023, 12:51</td>
     </tr>
   </tbody>
 </table>
@@ -112,54 +112,134 @@ $(document).ready(function() {
 
         <tbody>
             <tr>
-              <td class="location">com.library.steps.BookGenreDefs.i_execute_query_to_find_most_popular_book_genre()</td>
-              <td>1</td>
-              <td class="duration" data-value="86183000">0.086</td>
-              <td class="duration" data-value="86183000">0.086</td>
-              <td class="duration" data-value="86183000">0.086</td>
-              <td class="passed">100.00%</td>
-            </tr>
-            <tr>
-              <td class="location">com.library.steps.BookGenreDefs.verify_is_the_most_popular_book_genre(java.lang.String)</td>
-              <td>1</td>
-              <td class="duration" data-value="10617000">0.010</td>
-              <td class="duration" data-value="10617000">0.010</td>
-              <td class="duration" data-value="10617000">0.010</td>
-              <td class="passed">100.00%</td>
-            </tr>
-            <tr>
               <td class="location">com.library.steps.Hooks.destroyDB()</td>
-              <td>1</td>
-              <td class="duration" data-value="20327000">0.020</td>
-              <td class="duration" data-value="20327000">0.020</td>
-              <td class="duration" data-value="20327000">0.020</td>
+              <td>2</td>
+              <td class="duration" data-value="3775500">0.003</td>
+              <td class="duration" data-value="3775500">0.005</td>
+              <td class="duration" data-value="7551000">0.007</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.Hooks.setUp()</td>
+              <td>2</td>
+              <td class="duration" data-value="7129629500">7.129</td>
+              <td class="duration" data-value="7129629500">7.281</td>
+              <td class="duration" data-value="14259259000">14.259</td>
               <td class="passed">100.00%</td>
             </tr>
             <tr>
               <td class="location">com.library.steps.Hooks.setupDB()</td>
-              <td>1</td>
-              <td class="duration" data-value="2437127000">2.437</td>
-              <td class="duration" data-value="2437127000">2.437</td>
-              <td class="duration" data-value="2437127000">2.437</td>
+              <td>2</td>
+              <td class="duration" data-value="1062166000">1.062</td>
+              <td class="duration" data-value="1062166000">1.179</td>
+              <td class="duration" data-value="2124332000">2.124</td>
               <td class="passed">100.00%</td>
             </tr>
             <tr>
-              <td class="location">com.library.steps.UserStepDefs.establish_the_database_connection()</td>
-              <td>1</td>
-              <td class="duration" data-value="1429000">0.001</td>
-              <td class="duration" data-value="1429000">0.001</td>
-              <td class="duration" data-value="1429000">0.001</td>
+              <td class="location">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="354047500">0.354</td>
+              <td class="duration" data-value="354047500">0.471</td>
+              <td class="duration" data-value="708095000">0.708</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US02_BorrowedBooksDefs.the_on_the_home_page(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="930703000">0.930</td>
+              <td class="duration" data-value="930703000">1.171</td>
+              <td class="duration" data-value="1861406000">1.861</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US03_BookCategoryDefs.the_user_navigates_to_page(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2475878000">2.475</td>
+              <td class="duration" data-value="2475878000">2.521</td>
+              <td class="duration" data-value="4951756000">4.951</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_choose_the_book_category(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="296114000">0.296</td>
+              <td class="duration" data-value="296114000">0.384</td>
+              <td class="duration" data-value="592228000">0.592</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_click_to_add_book()</td>
+              <td>2</td>
+              <td class="duration" data-value="135901000">0.135</td>
+              <td class="duration" data-value="135901000">0.164</td>
+              <td class="duration" data-value="271802000">0.271</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_click_to_save_changes()</td>
+              <td>2</td>
+              <td class="duration" data-value="298645000">0.298</td>
+              <td class="duration" data-value="298645000">0.447</td>
+              <td class="duration" data-value="597290000">0.597</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_enter_author(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="279355000">0.279</td>
+              <td class="duration" data-value="279355000">0.330</td>
+              <td class="duration" data-value="558710000">0.558</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_enter_book_name(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1381857500">1.381</td>
+              <td class="duration" data-value="1381857500">1.476</td>
+              <td class="duration" data-value="2763715000">2.763</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_enter_isbn(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="224587500">0.224</td>
+              <td class="duration" data-value="224587500">0.306</td>
+              <td class="duration" data-value="449175000">0.449</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.the_librarian_enter_year(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="250444500">0.250</td>
+              <td class="duration" data-value="250444500">0.347</td>
+              <td class="duration" data-value="500889000">0.500</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.verify_information_must_match_with_db(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="225804500">0.225</td>
+              <td class="duration" data-value="225804500">0.272</td>
+              <td class="duration" data-value="451609000">0.451</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.library.steps.US06_AddingNewBookDefs.verify_message_is_displayed(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="444820000">0.444</td>
+              <td class="duration" data-value="444820000">0.455</td>
+              <td class="duration" data-value="889640000">0.889</td>
               <td class="passed">100.00%</td>
             </tr>
         </tbody>
 
         <tfoot class="total">
           <tr>
-            <td>5</td>
-            <td>5</td>
-            <td class="duration">0.511</td>
-            <td class="duration">2.437</td>
-            <td class="duration">2.555</td>
+            <td>15</td>
+            <td>30</td>
+            <td class="duration">1.032</td>
+            <td class="duration">14.259</td>
+            <td class="duration">30.987</td>
             <td>Totals</td>
           </tr>
         </tfoot>
