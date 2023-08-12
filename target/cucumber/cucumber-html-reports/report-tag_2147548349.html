@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>11 Aug 2023, 17:36</td>
+      <td>12 Aug 2023, 10:10</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@db</td>
-          <td      class="passed"    >4</td>
+          <td      class="passed"    >5</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">4</td>
+          <td class="total">5</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2306585000">2.306</td>
+          <td class="duration" data-value="4609643000">4.609</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -171,27 +171,27 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3967962972.html">As a data consumer, I want UI and DB book categories are match.</a>
+      <a href="report-feature_2160508509.html">As a data consumer, I want UI and DB book information are match.</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_2210186592.html">@us03</a>
-       <a href="report-tag_2147548883.html">@ui</a>
+       <a href="report-tag_2210186593.html">@us04</a>
        <a href="report-tag_2147548349.html">@db</a>
+       <a href="report-tag_2147548883.html">@ui</a>
        <a href="report-tag_2149507997.html">@wip</a>
 </div>
 
 
-  <span class="lead-duration duration">2.306</span>
+  <span class="lead-duration duration">4.609</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">verify book categories with DB</span>
+  <span class="name">Verify book information with DB</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -222,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">6.637</span>
+  <span class="lead-duration duration">16.106</span>
 
           </div>
 
@@ -238,7 +238,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.library.steps.Hooks.setupDB()</span>
 
-  <span class="lead-duration duration">0.891</span>
+  <span class="lead-duration duration">1.071</span>
 
           </div>
 
@@ -275,34 +275,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">the <span class="argument">&quot;librarian&quot;</span> on the home page</span>
 
-  <span class="lead-duration duration">0.675</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
-
-  <span class="lead-duration duration">0.966</span>
+  <span class="lead-duration duration">0.737</span>
 
 </div>
 
@@ -327,9 +300,63 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">the user clicks book categories</span>
+  <span class="name">the user navigates to <span class="argument">&quot;Books&quot;</span> page</span>
 
-  <span class="lead-duration duration">0.592</span>
+  <span class="lead-duration duration">2.279</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user searches for <span class="argument">&quot;Afzals Legacy&quot;</span> book</span>
+
+  <span class="lead-duration duration">0.333</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the user clicks edit book button</span>
+
+  <span class="lead-duration duration">0.601</span>
 
 </div>
 
@@ -354,9 +381,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify book categories must match book_categories table from db</span>
+  <span class="name">book information must match the Database</span>
 
-  <span class="lead-duration duration">0.072</span>
+  <span class="lead-duration duration">0.657</span>
 
 </div>
 
@@ -401,7 +428,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.library.steps.Hooks.destroyDB()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
@@ -417,7 +444,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.library.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.213</span>
+  <span class="lead-duration duration">0.280</span>
 
           </div>
 

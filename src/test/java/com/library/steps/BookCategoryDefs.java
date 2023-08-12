@@ -18,6 +18,7 @@ public class BookCategoryDefs {
     @When("the user navigates to {string} page")
     public void the_user_navigates_to_page(String moduleName) {
         bookPage.navigateModule(moduleName);
+        BrowserUtil.waitFor(1);
     }
     @When("the user clicks book categories")
     public void the_user_clicks_book_categories() {

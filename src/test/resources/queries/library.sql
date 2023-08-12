@@ -14,3 +14,8 @@ where is_returned = 0;
 
 # US03
 select name from book_categories;
+
+
+# US04
+select * from books
+where name = 'Afzals Legacy';
