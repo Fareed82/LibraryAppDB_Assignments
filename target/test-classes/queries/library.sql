@@ -43,3 +43,12 @@ where id = (select book_category_id from books
 select * from books
 where author = 'J. R. R. Tolkien';
 
+select name from books where name = 'In The Land Of Mordor Where The Shadows Lie';
+select name from books where name = 'One Ring To Rule Them All';
+
+
+# US07
+select name from books b
+                join book_borrow bb on b.id = bb.book_id
+                join users u on bb.user_id = u.id
+                where name = 'In The Land Of Mordor Where The Shadows Lie';
